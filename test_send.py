@@ -3,7 +3,7 @@ from google.cloud import pubsub
 
 
 def list_topics(project_id):
-	#pubsub_client=pubsub.Client()
+	pubsub_client=pubsub.Client()
 	
 for topic in pubsub_client.list_topics():
 	print(topic.name)
